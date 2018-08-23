@@ -1,0 +1,721 @@
+@font-face {
+  font-family: "YuGothR";
+  src: url("../fonts/YuGothR.ttc"); }
+
+@font-face {
+  font-family: "YuGothB";
+  src: url("../fonts/YuGothB.ttc"); }
+
+@font-face {
+  font-family: "YuGothL";
+  src: url("../fonts/YuGothL.ttc"); }
+
+@font-face {
+  font-family: "segoeuiR";
+  src: url("../fonts/segoeui.ttf"); }
+
+.content {
+  width: 85.4%;
+  margin: 0 auto; }
+
+.no-padding {
+  padding: 0;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: 93px;
+  background: white; }
+  header .white-bg {
+    padding: 1.25rem 0 0; }
+    header .white-bg ul li {
+      padding-left: 112px !important; }
+      header .white-bg ul li a {
+        font-size: 20px;
+        font-family: "YuGothR";
+        position: relative;
+        display: block;
+        cursor: pointer; }
+        header .white-bg ul li a:before, header .white-bg ul li a:after {
+          content: '' !important;
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          bottom: -2px;
+          background: black; }
+        header .white-bg ul li a:before {
+          left: 0; }
+        header .white-bg ul li a:after {
+          right: 0;
+          background: black;
+          -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+          -o-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+        header .white-bg ul li a:hover:before {
+          background: black;
+          width: 100%;
+          -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+          -o-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) !important; }
+        header .white-bg ul li a:hover:after {
+          background: transparent !important;
+          width: 100% !important;
+          -webkit-transition: 0s !important;
+          -o-transition: 0s !important;
+          transition: 0s !important; }
+    header .white-bg .active {
+      border-bottom: 1px solid black; }
+
+section.home, section.about, section.contact, section.portfolio, section.media {
+  padding: 34px 0 34px 0; }
+  section.home .brand-image, section.home .about-image, section.home .contact-image, section.home .portfolio-image, section.home .media-image, section.about .brand-image, section.about .about-image, section.about .contact-image, section.about .portfolio-image, section.about .media-image, section.contact .brand-image, section.contact .about-image, section.contact .contact-image, section.contact .portfolio-image, section.contact .media-image, section.portfolio .brand-image, section.portfolio .about-image, section.portfolio .contact-image, section.portfolio .portfolio-image, section.portfolio .media-image, section.media .brand-image, section.media .about-image, section.media .contact-image, section.media .portfolio-image, section.media .media-image {
+    background-image: url(../img/brad-bg.png);
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 850px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  section.home .about-image, section.about .about-image, section.contact .about-image, section.portfolio .about-image, section.media .about-image {
+    background-image: url("../img/abot-bg.png");
+    background-position: bottom; }
+  section.home .contact-image, section.about .contact-image, section.contact .contact-image, section.portfolio .contact-image, section.media .contact-image {
+    background-image: url("../img/contact-bg.png");
+    background-position: right; }
+  section.home .portfolio-image, section.about .portfolio-image, section.contact .portfolio-image, section.portfolio .portfolio-image, section.media .portfolio-image {
+    background-image: url("../img/portfolio.jpg");
+    background-position: top; }
+  section.home .media-image, section.about .media-image, section.contact .media-image, section.portfolio .media-image, section.media .media-image {
+    background-image: url("../img/media.png");
+    background-position: center; }
+
+section.home-context .need-music, section.about-content .need-music, section.contact-content .need-music, section.client-video .need-music, section.additional_clients .need-music, section.media-context .need-music {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 108px; }
+  section.home-context .need-music p, section.about-content .need-music p, section.contact-content .need-music p, section.client-video .need-music p, section.additional_clients .need-music p, section.media-context .need-music p {
+    font-size: 24px;
+    font-family: "YuGothR";
+    text-align: center;
+    padding-bottom: 30px; }
+  section.home-context .need-music a, section.about-content .need-music a, section.contact-content .need-music a, section.client-video .need-music a, section.additional_clients .need-music a, section.media-context .need-music a {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 24px;
+    width: 146px;
+    text-align: center;
+    display: block;
+    height: 43px;
+    font-family: "YuGothR";
+    color: black;
+    border: 1px solid;
+    padding: 3px 0; }
+    section.home-context .need-music a:hover, section.about-content .need-music a:hover, section.contact-content .need-music a:hover, section.client-video .need-music a:hover, section.additional_clients .need-music a:hover, section.media-context .need-music a:hover {
+      -webkit-box-shadow: 0 0 5px 0 #aeaeae;
+      box-shadow: 0 0 5px 0 #aeaeae;
+      -webkit-transition: 1500ms;
+      -o-transition: 1500ms;
+      transition: 1500ms; }
+  section.home-context .need-music h1, section.about-content .need-music h1, section.contact-content .need-music h1, section.client-video .need-music h1, section.additional_clients .need-music h1, section.media-context .need-music h1 {
+    margin: 70px 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: "YuGothB"; }
+    section.home-context .need-music h1 span, section.about-content .need-music h1 span, section.contact-content .need-music h1 span, section.client-video .need-music h1 span, section.additional_clients .need-music h1 span, section.media-context .need-music h1 span {
+      color: white; }
+
+section.contact-content .need-music {
+  margin: 0 auto; }
+
+section.contact-page {
+  padding: 0 0 131px 0; }
+  section.contact-page .contact-form {
+    width: 40%;
+    margin: 0 auto; }
+    section.contact-page .contact-form form label {
+      font-size: 18px;
+      font-family: "YuGothR"; }
+    section.contact-page .contact-form form input, section.contact-page .contact-form form textarea {
+      border-radius: unset !important; }
+    section.contact-page .contact-form form small {
+      color: rgba(0, 0, 0, 0.45);
+      display: block;
+      font-size: .813em;
+      letter-spacing: .5pt;
+      white-space: nowrap;
+      margin: 1px 0 9px 1px; }
+    section.contact-page .contact-form form .submit {
+      text-decoration: none;
+      font-size: 24px;
+      width: 146px;
+      text-align: center;
+      display: block;
+      height: 43px;
+      font-family: "YuGothR";
+      color: black;
+      border: 1px solid;
+      margin: 70px 0 0 0;
+      padding: 3px 0; }
+    section.contact-page .contact-form form div {
+      margin-top: 16px; }
+
+section.client-video .music-video .music-link, section.client-video .music-video .music-link1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  section.client-video .music-video .music-link:hover, section.client-video .music-video .music-link1:hover {
+    -webkit-filter: unset;
+    filter: unset;
+    -webkit-transition: 1500ms;
+    -o-transition: 1500ms;
+    transition: 1500ms; }
+  section.client-video .music-video .music-link .music-description, section.client-video .music-video .music-link1 .music-description {
+    font-size: 18px;
+    font-family: "YuGothL"; }
+    section.client-video .music-video .music-link .music-description p, section.client-video .music-video .music-link .music-description span, section.client-video .music-video .music-link1 .music-description p, section.client-video .music-video .music-link1 .music-description span {
+      display: inline-block;
+      margin: unset;
+      padding: 0 0 20px 0; }
+    section.client-video .music-video .music-link .music-description p, section.client-video .music-video .music-link1 .music-description p {
+      padding: 0 0 20px 153px; }
+    section.client-video .music-video .music-link .music-description h5, section.client-video .music-video .music-link1 .music-description h5 {
+      margin: unset;
+      padding: 17px 0; }
+
+section.additional_clients {
+  padding-top: 50px; }
+  section.additional_clients .client-logo {
+    padding-bottom: 140px; }
+
+section.media-tab, section.player {
+  /* Plyr Overrides
+    ================================================== */ }
+  section.media-tab audio, section.player audio {
+    margin: 0;
+    width: 40%; }
+  section.media-tab #audiowrap, section.player #audiowrap {
+    background: #f1f3f4; }
+  section.media-tab #audiowrap,
+  section.media-tab #plwrap, section.player #audiowrap,
+  section.player #plwrap {
+    margin: 0 auto; }
+    section.media-tab #audiowrap span#npTitle,
+    section.media-tab #plwrap span#npTitle, section.player #audiowrap span#npTitle,
+    section.player #plwrap span#npTitle {
+      padding: 21px;
+      text-align: right;
+      padding-top: 20px;
+      float: right !important; }
+  section.media-tab #nowPlay, section.player #nowPlay {
+    display: block;
+    font-size: 0; }
+    section.media-tab #nowPlay span, section.player #nowPlay span {
+      display: inline-block;
+      font-size: 1.05rem;
+      vertical-align: top; }
+    section.media-tab #nowPlay span#npAction, section.player #nowPlay span#npAction {
+      padding: 21px;
+      width: 30%; }
+  section.media-tab #plList, section.player #plList {
+    padding: 0 0 0 15px; }
+    section.media-tab #plList li, section.player #plList li {
+      cursor: pointer;
+      display: block;
+      border-top: 1px solid #707070;
+      margin: 0;
+      padding: 30px 0; }
+  section.media-tab #audio0 p, section.player #audio0 p {
+    margin: unset; }
+  section.media-tab #tracks, section.player #tracks {
+    font-size: 0;
+    position: relative; }
+    section.media-tab #tracks a, section.player #tracks a {
+      border-radius: 3px;
+      color: black;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 2rem;
+      height: 35px;
+      line-height: .175;
+      padding: 10px;
+      text-decoration: none;
+      -webkit-transition: background .3s ease;
+      -o-transition: background .3s ease;
+      transition: background .3s ease; }
+      section.media-tab #tracks a:last-child, section.player #tracks a:last-child {
+        margin-left: 0; }
+      section.media-tab #tracks a:hover, section.media-tab #tracks a:active, section.player #tracks a:hover, section.player #tracks a:active {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff; }
+      section.media-tab #tracks a::-moz-focus-inner, section.player #tracks a::-moz-focus-inner {
+        border: 0;
+        padding: 0; }
+  section.media-tab .plItem, section.player .plItem {
+    position: relative; }
+  section.media-tab .plAlbum, section.player .plAlbum {
+    overflow: hidden;
+    position: absolute;
+    right: 65px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    top: 23px;
+    left: 50px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: "Open Sans Semibold";
+    color: #706B7B;
+    text-decoration: none; }
+  section.media-tab .plTitle, section.player .plTitle {
+    left: 50px;
+    overflow: hidden;
+    position: absolute;
+    right: 65px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    top: -13px;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: "YuGothB";
+    color: #706B7B;
+    text-decoration: none; }
+  section.media-tab .plNum, section.player .plNum {
+    padding-left: 5px;
+    width: 25px; }
+    section.media-tab .plNum i, section.player .plNum i {
+      font-size: 18px; }
+  section.media-tab .plLength, section.player .plLength {
+    padding-left: 21px;
+    position: absolute;
+    right: 298px;
+    top: 0;
+    font-size: 24px;
+    font-family: "YuGothL";
+    color: black; }
+  section.media-tab .plAdd, section.player .plAdd {
+    right: 10px;
+    font-size: 23px;
+    font-weight: normal;
+    position: absolute; }
+  section.media-tab .filter, section.player .filter {
+    margin-bottom: 130px;
+    padding-left: 15px; }
+    section.media-tab .filter a, section.player .filter a {
+      font-family: "YuGothB";
+      font-size: 26px;
+      color: black;
+      display: inline-block;
+      padding: 0 43px 0 0;
+      text-decoration: none;
+      position: relative; }
+    section.media-tab .filter a.active:after, section.player .filter a.active:after {
+      position: absolute;
+      width: 47px;
+      height: 1px;
+      left: 16%;
+      display: block;
+      content: "";
+      background: black; }
+  section.media-tab .search-audio, section.player .search-audio {
+    margin-bottom: 72px; }
+    section.media-tab .search-audio h5, section.player .search-audio h5 {
+      font-size: 32px;
+      font-family: "YuGothB";
+      color: black;
+      padding-left: 15px; }
+    section.media-tab .search-audio input, section.media-tab .search-audio span, section.player .search-audio input, section.player .search-audio span {
+      background: unset;
+      border-left: unset;
+      border-top: unset;
+      border-radius: unset;
+      border-right: unset;
+      border-bottom: 1px solid #707070; }
+      section.media-tab .search-audio input:focus, section.media-tab .search-audio span:focus, section.player .search-audio input:focus, section.player .search-audio span:focus {
+        outline: unset;
+        -webkit-box-shadow: unset;
+        box-shadow: unset; }
+  section.media-tab .center-disc, section.player .center-disc {
+    text-align: center; }
+    section.media-tab .center-disc img, section.player .center-disc img {
+      width: unset; }
+  section.media-tab .plyr--audio .plyr__controls, section.player .plyr--audio .plyr__controls {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 20px 20px 20px 13px;
+    width: 100%; }
+  section.media-tab .plyr--audio .plyr__controls button.tab-focus:focus,
+  section.media-tab .plyr--audio .plyr__controls button:hover,
+  section.media-tab .plyr__play-large, section.player .plyr--audio .plyr__controls button.tab-focus:focus,
+  section.player .plyr--audio .plyr__controls button:hover,
+  section.player .plyr__play-large {
+    background: rgba(0, 0, 0, 0.1); }
+  section.media-tab .plyr__progress--played,
+  section.media-tab .plyr__volume--display, section.player .plyr__progress--played,
+  section.player .plyr__volume--display {
+    color: rgba(0, 0, 0, 0.1); }
+  section.media-tab .plyr--audio .plyr__progress--buffer,
+  section.media-tab .plyr--audio .plyr__volume--display, section.player .plyr--audio .plyr__progress--buffer,
+  section.player .plyr--audio .plyr__volume--display {
+    background: rgba(0, 0, 0, 0.1); }
+  section.media-tab .plyr--audio .plyr__progress--buffer, section.player .plyr--audio .plyr__progress--buffer {
+    color: rgba(0, 0, 0, 0.1); }
+
+section.player {
+  margin: 60px 0 0 0; }
+
+footer {
+  background-color: black;
+  padding: 34px 0; }
+  footer .footer-content {
+    width: 56.8%;
+    margin: 0 auto; }
+  footer ul {
+    margin: unset;
+    text-align: center; }
+    footer ul li .social-links {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      padding: 6px;
+      text-align: center;
+      display: block;
+      border: 2px solid white;
+      border-radius: 50%; }
+      footer ul li .social-links a {
+        color: white; }
+    footer ul li p {
+      color: white;
+      font-size: 20px;
+      font-family: "YuGothB";
+      margin: unset;
+      padding: 13px 0 0 0; }
+
+.slider-labels {
+  margin-top: 10px; }
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target, .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.noUi-target {
+  position: relative;
+  direction: ltr; }
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */ }
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+.noUi-handle {
+  position: relative;
+  z-index: 1; }
+
+.noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+     its values is > 50%. */
+  z-index: 10; }
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  -o-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s; }
+
+.noUi-state-drag * {
+  cursor: inherit !important; }
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base, .noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 2px; }
+
+.noUi-horizontal .noUi-handle {
+  width: 3px;
+  height: 18px;
+  left: 0;
+  top: -7px;
+  background-color: black; }
+
+/* Styling;
+ */
+.noUi-background {
+  background: #AEACB2; }
+
+.noUi-connect {
+  background: black;
+  -webkit-transition: background 450ms;
+  -o-transition: background 450ms;
+  transition: background 450ms; }
+
+.noUi-origin {
+  border-radius: 2px; }
+
+.noUi-target {
+  border-radius: 2px; }
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize; }
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize; }
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important; }
+
+.noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px; }
+
+/* Disabled state;
+ */
+[disabled].noUi-connect, [disabled] .noUi-connect {
+  background: #B8B8B8; }
+
+[disabled].noUi-origin, [disabled] .noUi-handle {
+  cursor: not-allowed; }
+
+.audio-cut {
+  padding: 0 15px; }
+
+.audio-speed .main-progress, .audio-speed .main-lenght-system, .audio-lenght .main-progress, .audio-lenght .main-lenght-system {
+  display: inline-block;
+  width: 70%; }
+
+.audio-speed strong, .audio-lenght strong {
+  margin: 20px 20px 0 0;
+  font-family: "YuGothB";
+  font-size: 22px; }
+
+.audio-speed .def-speed span, .audio-lenght .def-speed span {
+  font-family: "YuGothL";
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: 15px 0; }
+
+.audio-speed .first-progress, .audio-lenght .first-progress {
+  height: 1px;
+  width: 7%;
+  margin: 20px 0;
+  background: black;
+  position: relative;
+  overflow: unset; }
+  .audio-speed .first-progress i, .audio-lenght .first-progress i {
+    position: absolute;
+    top: -5px; }
+  .audio-speed .first-progress .left-side, .audio-lenght .first-progress .left-side {
+    left: -9%; }
+  .audio-speed .first-progress .right-side, .audio-lenght .first-progress .right-side {
+    left: 90%; }
+
+.audio-speed .last-progress, .audio-lenght .last-progress {
+  background: #AEACB2; }
+  .audio-speed .last-progress .main-speed-bar, .audio-lenght .last-progress .main-speed-bar {
+    background-color: black !important; }
+
+.audio-lenght strong {
+  margin: 25px 20px 0 0;
+  font-family: "YuGothB";
+  font-size: 22px;
+  display: inline-block; }
+
+.audio-lenght .lenght-bar .main-lenght-chenger {
+  margin: 20px 0;
+  position: relative; }
+  .audio-lenght .lenght-bar .main-lenght-chenger i.left-side {
+    position: absolute;
+    left: -1px;
+    top: 10px; }
+  .audio-lenght .lenght-bar .main-lenght-chenger i.right-side {
+    position: absolute;
+    left: 43px;
+    top: 10px; }
+
+.audio-lenght .lenght-bar .line {
+  width: 48px;
+  height: 1px;
+  background: black;
+  display: inline-block; }
+
+.main-lenght-system .def-speed {
+  width: 100%; }
+
+.progress-bar {
+  background-color: black; }
+
+@media screen and (max-width: 1490px) {
+  section #str1 {
+    right: 118px;
+    top: 68px;
+    position: absolute;
+    font-size: 88px;
+    font-family: "YuGothB";
+    padding-bottom: 45px; }
+  #about #str {
+    position: absolute;
+    right: -92%;
+    top: 68px;
+    font-size: 86px;
+    font-family: "YuGothB";
+    padding-bottom: 45px; }
+  section #contact-page .album_images .album_viny img {
+    width: 61% !important; } }
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  section.home .brand-image #str {
+    left: 35px;
+    top: 61px;
+    font-size: 43px; }
+  section.home .need-music {
+    margin: 46px 35px 0; }
+  footer ul li .social-links {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px; }
+  .contact #str1, .contact #str {
+    display: none; } }
+
+@media screen and (max-width: 1700px) {
+  #about .brand-image #str {
+    position: absolute;
+    right: -92%;
+    top: 68px;
+    font-size: 86px;
+    font-family: "YuGothB";
+    padding-bottom: 45px; }
+  #about .need-music {
+    margin: 280px 35px 0; } }
+
+@media screen and (max-width: 1400px) {
+  #about .brand-image #str {
+    position: absolute;
+    right: -95%;
+    top: 40px;
+    font-size: 83px;
+    font-family: "YuGothB";
+    padding-bottom: 45px; }
+  #about .need-music {
+    margin: 170px 35px 0; } }
+
+@media screen and (max-width: 1200px) {
+  #about .brand-image #str {
+    display: none; }
+  #about .need-music {
+    margin: 7px 35px 0; } }
+
+@media screen and (max-width: 767px) {
+  #about {
+    padding: 34px 0 0 0;
+    text-align: center; }
+    #about .need-music {
+      margin: 40px 35px 0; }
+  #aboout-content .about-box p {
+    font-size: 22px;
+    padding-right: 0;
+    margin-bottom: 30px; }
+  #aboout-content h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: "YuGothB"; }
+  header {
+    height: auto !important;
+    padding: 20px 0; }
+  section.home-context .need-music, section.about-content .need-music, section.contact-content .need-music, section.client-video .need-music, section.additional_clients .need-music, section.media-context .need-music {
+    width: 90%;
+    margin: 0 auto 20px; }
+    section.home-context .need-music h1, section.about-content .need-music h1, section.contact-content .need-music h1, section.client-video .need-music h1, section.additional_clients .need-music h1, section.media-context .need-music h1 {
+      margin: 40px 0;
+      font-size: 30px; }
+    section.home-context .need-music p, section.about-content .need-music p, section.contact-content .need-music p, section.client-video .need-music p, section.additional_clients .need-music p, section.media-context .need-music p {
+      font-size: 20px; }
+  section.media-tab .filter, section.player .filter {
+    margin-bottom: 70px; }
+    section.media-tab .filter a, section.player .filter a {
+      display: block !important;
+      text-align: center; }
+      section.media-tab .filter a.active:after, section.player .filter a.active:after {
+        left: 32%; }
+  header .white-bg ul li {
+    padding-left: unset !important;
+    text-align: center;
+    width: 33%;
+    margin: 0 auto; }
+  section.additional_clients .client-logo {
+    padding-bottom: 30px; }
+  section.contact-page .contact-form {
+    width: unset !important; }
+  section.media-tab .center-disc, section.player .center-disc {
+    display: none; }
+  section.media-tab .plTitle, section.player .plTitle {
+    font-size: 16px; }
+  .plAdd img {
+    width: 50%; }
+  section.media-tab .plLength, section.player .plLength {
+    padding-left: 21px;
+    right: 68px;
+    top: 19px;
+    font-size: 15px; }
+  .audio-speed .first-progress .right-side, .audio-lenght .first-progress .right-side {
+    left: 87%; } }
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  section.media-tab .plLength, section.player .plLength {
+    right: 70px; } }
+
+@media screen and (max-width: 1204px) and (min-width: 768px) {
+  section.media-tab .plTitle, section.player .plTitle {
+    font-size: 14px; }
+  section.media-tab .plLength, section.player .plLength {
+    right: 70px;
+    font-size: 18px; }
+  .plAdd img {
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  #nowPlay span#npAction {
+    display: none; }
+  #nowPlay span#npTitle {
+    display: block;
+    text-align: center;
+    width: 100%; } }

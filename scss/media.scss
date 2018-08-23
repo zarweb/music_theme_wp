@@ -1,0 +1,239 @@
+//@media screen and(max-width: 1860px) and (min-width: 1450px){
+//  section{
+//    &.contact {
+//      .brand-image {
+//        #str{
+//          right: -64% !important;
+//        }
+//      }
+//    }
+//  }
+//}
+@media screen and (max-width: 1490px) {
+  section #str1 {
+    right: 118px;
+    top: 68px;
+    position: absolute;
+    font-size: 88px;
+    font-family: "YuGothB";
+    padding-bottom: 45px;
+  }
+  #about #str {
+    position: absolute;
+    right: -92%;
+    top: 68px;
+    font-size: 86px;
+    font-family: "YuGothB";
+    padding-bottom: 45px;
+  }
+  section {
+    #contact-page {
+      .album_images {
+        .album_viny {
+          img {
+            width: 61% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  section {
+    &.home {
+      .brand-image {
+        #str {
+          left: 35px;
+          top: 61px;
+          font-size: 43px;
+        }
+      }
+      .need-music {
+        margin: 46px 35px 0;
+      }
+    }
+  }
+  footer {
+    ul {
+      li {
+        .social-links {
+          width: 50px;
+          height: 50px;
+          font-size: 16px;
+          margin: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .contact {
+    #str1, #str {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #about {
+    .brand-image #str {
+      position: absolute;
+      right: -92%;
+      top: 68px;
+      font-size: 86px;
+      font-family: "YuGothB";
+      padding-bottom: 45px;
+    }
+    .need-music {
+      margin: 280px 35px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #about {
+    .brand-image #str {
+      position: absolute;
+      right: -95%;
+      top: 40px;
+      font-size: 83px;
+      font-family: "YuGothB";
+      padding-bottom: 45px;
+    }
+    .need-music {
+      margin: 170px 35px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about {
+    .brand-image #str {
+      display: none;
+    }
+    .need-music {
+      margin: 7px 35px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about {
+    .need-music {
+      margin: 40px 35px 0;
+    }
+    padding: 34px 0 0 0;
+    text-align: center;
+  }
+  #aboout-content {
+    .about-box p {
+      font-size: 22px;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      font-family: "YuGothB";
+    }
+  }
+  header {
+    height: auto !important;
+    padding: 20px 0;
+  }
+  section.home-context .need-music, section.about-content .need-music, section.contact-content .need-music, section.client-video .need-music, section.additional_clients .need-music, section.media-context .need-music {
+    width: 90%;
+    margin: 0 auto 20px;
+
+    h1 {
+      margin: 40px 0;
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+  section.media-tab, section.player {
+    .filter {
+
+      margin-bottom: 70px;
+      a {
+        display: block !important;
+        text-align: center;
+
+        &.active {
+          &:after {
+            left: 32%;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .white-bg {
+      ul {
+        li{
+          padding-left: unset !important;
+          text-align: center;
+          width: 33%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  section.additional_clients {
+    .client-logo{
+      padding-bottom: 30px;
+    }
+  }
+  section.contact-page .contact-form{
+    width: unset !important;
+  }
+  section.media-tab .center-disc, section.player .center-disc{
+    display: none;
+  }
+  section.media-tab .plTitle, section.player .plTitle{
+    font-size: 16px;
+  }
+  .plAdd img{
+    width: 50%;
+  }
+  section.media-tab .plLength, section.player .plLength{
+    padding-left: 21px;
+    right: 68px;
+    top: 19px;
+    font-size: 15px;
+  }
+  .audio-speed .first-progress .right-side, .audio-lenght .first-progress .right-side{
+    left: 87%;
+  }
+}
+
+@media screen and (max-width:1300px) and (min-width: 1024px){
+  section.media-tab .plLength, section.player .plLength{
+    right: 70px;
+  }
+}
+
+@media screen and (max-width: 1204px) and (min-width: 768px) {
+  section.media-tab .plTitle, section.player .plTitle{
+    font-size: 14px;
+  }
+  section.media-tab .plLength, section.player .plLength{
+    right: 70px;
+    font-size: 18px;
+  }
+  .plAdd img{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #nowPlay span#npAction {
+    display: none;
+  }
+  #nowPlay span#npTitle {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
